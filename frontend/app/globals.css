@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '../node_modules/@syncfusion/ej2-react-grids/styles/material.css';
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  background: rgb(241, 241, 241);
+  color: black;
+}
+.icon_col {
+  color: #fff;
+  /* font-size: larger; */
+}
+.scr::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .setMyGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.pattern {
+  background: url('/pattern-1.jpg');
+  background-size: cover;
+  filter: blur(1px);
+  opacity: 0.05;
+}
+
+.exam_bg {
+  background: url('/exam_bg.png') right/cover, rgb(224, 233, 246);
+  /* background: rgb(224, 233, 246), url('/exam_bg.jpeg'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity: 0.5; */
+  z-index: -100px;
+}
+.d_shadow {
+  /* filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); */
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+}
